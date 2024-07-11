@@ -4,8 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            background-color: f1f1f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container{
+            width: 400px;
+            background-color: #fff;
+            border-radius: 10px;
+
+        }
+        .login-box{
+            padding: 40px;
+        }
+        h2{
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+        .user-box{
+            position: relative;
+            margin-bottom: 30px;
+        }
+        .user-box>input{
+            width: 100%;
+            padding: 10px 0px;
+            font-size: 16px;
+            color: #333;
+            border: none;
+            border-bottom: 1px;
+            outline: none;
+            background: transparent;
+            transition: border-color 0.2s;
+        }
+        .user-box input:focus,
+  .user-box input:valid {
+    border-color: #1e87f0;
+  }
+  
+  .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    color: #777;
+    pointer-events: none;
+    transition: all 0.2s;
+  }
+  
+  
+  a {
+    display: inline-block;
+    background-color: #1e87f0;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.2s;
+  }
+  
+  a:hover {
+    background-color: #1472c4;
+  }
+
+    </style>
 </head>
 <body>
-    index page
+    <div class="container">
+        <div class="log-in-box">
+            <h2>LogIn</h2>
+            <form action="">
+                <div class="user-box">
+                    <input type="text" name="username">
+                    <label >username</label>
+                </div>
+                <div class="user-box">
+                    <input type="password" name="password">
+                    <label for="">Passward</label>
+                </div>
+                <a href="#">Submit</a>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
